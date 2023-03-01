@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main {
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+@media screen and (max-width:500px) {
+  main {
+    width: 80%;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 2rem;
+}
+
+h1 span{
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.filter {
+  display: flex;
+  justify-content:space-between;
+}
+.filter input{
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input[type="datetime-local"] {
+  color: #777;
+}
+
+form .basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.transactions {
+  margin-top: 10px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+.transaction:first-child {
+  border-top: 0;
+}
+
+.transaction .name {
+  font-size: 1rem;
+}
+
+.transaction .description {
+  font-size: .9rem;
+  color: #888;
+}
+
+.right {
+  text-align: right;
+}
+
+.right .btn {
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.price.green {
+  color: #1c1;
+}
+
+.price.red {
+  color: #c11;
+}
+
+.transaction .datetime {
+  font-size: .9rem;
+  color: #888;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+  padding: .5rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #17181f;
+  font-weight: 600;
+}
